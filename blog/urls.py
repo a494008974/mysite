@@ -18,4 +18,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
+    path('title/',views.blog_title)
 ]
