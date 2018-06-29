@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
-{% block title %}Title{% endblock %}
+{% block title %}我的博客{% endblock %}
 {% block content %}
     <div>
         <h1>我的博客</h1>
     </div>
-
+    <br>
     <div class="layui-row">
         <div class="layui-col-xs12 layui-col-md8">
             <ul>
                 {% for blog in blogs %}
-                    <li>{{ blog.title }}</li>
+                    <li><a href="{{ blog.id }}">{{ blog.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>

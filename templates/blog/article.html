@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}我的文章{% endblock %}
+{% block content %}
+    <div>
+        <h1>{{ article.title }}</h1>
+    </div>
+    <br>
+    <div>
+        <h5>{{ article.author }}</h5>
+         <br>
+        {{ article.body }}
+        <br>
+        <br>
+        {{ article.publish }}
+    </div>
+{% endblock %}
+
+
